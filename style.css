@@ -1,0 +1,150 @@
+#restart-button{
+    font-size: 25px;
+    position: absolute;
+    left: 300px;
+    visibility: hidden;
+}
+
+
+#fs{
+    font-size: 40px;
+    position: absolute;
+    right: 25px;
+}
+
+
+.score{
+    font-size: 20px;
+    background: blanchedalmond;
+    padding: 5px 0 5px 50px;
+}
+
+#btn1{
+    left: 0;
+    top: 27px;
+    background: lightblue;
+    height: 340px;
+    position: fixed;
+    font-size: 40px;
+    animation: none;
+}
+
+#btn2{
+    right: 0;
+    top: 27px;
+    background: lightblue;
+    height: 340px;
+    font-size: 40px;
+   position: fixed;
+   animation: none;
+}
+
+
+
+
+
+
+
+#over{
+     position: relative;
+     left: 25px;
+     
+     top: 14px;
+    font-size: 40px;
+    text-align: center;
+    visibility: hidden;
+    color: yellow;
+    
+   font-weight: bold;
+   animation: over 1s;
+   animation-iteration-count: infinite;
+   }
+
+@keyframes over {
+    0%{font-size: 30px; left: 25px;}
+    50%{color: lightcoral; left: 25px;}
+    100%{font-size: 60px; color: red; left: 25px;}
+}
+
+
+.ani{
+    animation: animation 1.8s linear;
+    animation-fill-mode: forwards;}
+@keyframes animation {
+    0%{bottom: 0px;}
+   
+    30%{bottom: 150px; transform: rotate(15deg);}
+    99%{bottom: 3px; transform: rotate(20deg);}
+    100%{bottom: 00px; left: ; }
+   }
+
+
+body {
+    overflow: hidden;
+    zoom: 1;
+    margin: 0;
+}
+h1{text-align: center;
+font-size: 40px;
+color: red;
+
+}
+.bg{ 
+    background-image: url('https://i.pinimg.com/originals/93/f7/32/93f7326b49586070ca33f02fda1ab764.gif');
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -2;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+} 
+#man{
+    background-image: url('https://dl7.wapkizfile.info/download/32a1b347fe8eb1a7692aec82a23805c3/afe9b317f60a508efed6ffd1dcdfbf2f/amanaryan+aino+pk/miniGif-20230103080915-(amanaryan.aino.pk).gif');
+    width: 15vw;
+   height: 15vw;
+    position: absolute;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    bottom: 0px;
+    left: 17px;
+    
+}
+.obstacle{
+    background-image: url('https://dl7.wapkizfile.info/download/0cf2aba642e41033f1ba17f5989bc21f/afe9b317f60a508efed6ffd1dcdfbf2f/amanaryan+aino+pk/miniGif-20230102084905-(amanaryan.aino.pk).gif');
+    width: 27vw;
+    height: 26vh;
+    position: absolute;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom ;
+    bottom: 0px;
+    right: 0;
+   
+   }
+.obs{
+    animation: tiger 6s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes tiger {
+    0%{right: 0px; bottom: 0px;}
+    50%{right: 435px; bottom: 0px;}
+    100%{right: 870px; bottom: 0px;}
+}
+@keyframes man {
+    0%{bottom: 100px;}
+   
+    50%{bottom: 100px;
+    left: 80px;}
+    100%{bottom: 100px; left: 200px;}
+    }
+#box{
+    border: solid 5px red;
+    background: green;
+    width: 50px;
+    height: 30px;}
+
+
